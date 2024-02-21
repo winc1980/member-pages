@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 5px;
+}
+
+.hamburger-menu {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  position: relative;
+}
+
+.hamburger-menu p {
+  height: 20px;
+  font-size: 12px;
+  margin: auto auto auto 5px;
+}
+
+.menu-btn {
+  margin: auto 10px auto auto;
+  display: flex;
+  height: 45px;
+  width: 45px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: rgb(236, 87, 138);
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+.menu-content {
+  width: 100vw;
+  height: 180px;
+  position: absolute;
+  left: 0;
+  bottom: 110%;
+  z-index: 80;
+  background-color: rgb(236, 87, 138);
+  transition: all 0.3s;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  bottom: calc(100% - 17.5rem);
+}
+
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+main {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.minihukidasi {
+  height: 110px;
+  width: 25px;
+  background-color: white;
+  position: fixed;
+  margin: 300px 0 auto auto;
+  border-top: solid 3px #555;
+  border-right: solid 3px #555;
+  border-bottom: solid 3px #555;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(236, 87, 138);
+  left: 0;
+}
+
+.side_menu {
+  width: 25px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+  font-size: 10px;
+  z-index: 1;
+}
+
+.balloon2-left {
+  position: relative;
+  z-index: 1;
+  margin: 200px 0 1.5em 15px;
+  padding: 7px 10px;
+  width: 200px;
+  height: 350px;
+  color: #555;
+  font-size: 16px;
+  background: #fff;
+  border: solid 3px #555;
+  box-sizing: border-box;
+  position: fixed;
+  border-radius: 15px;
+  padding: 0;
+}
+
+.balloon2-left button {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: solid 2px rgb(236, 87, 138);
+  margin-top: 15px;
+}
+
+.registration_wrapper {
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.hukidasi_head {
+  width: 195px;
+  height: 30px;
+  background-color: rgb(236, 87, 138);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.hukidasi_head button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.batu_wrapper {
+  width: 20px;
+  height: 20px;
+  margin: auto 20px auto auto;
+}
+
+.balloon2-left a {
+  width: 140px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto 0 auto;
+  border-bottom: solid 1px rgb(204, 196, 196);
+}
+
+.TOP_a {
+  background-color: rgb(236, 87, 138);
+  color: white;
+  align-items: center;
+}
+
+.C {
+  display: none;
+}
+
+.balloon2-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  margin-top: -12px;
+  border: 12px solid transparent;
+  border-right: 12px solid #fff;
+  z-index: 2;
+}
+
+.balloon2-left:after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-right: 14px solid #555;
+  z-index: 1;
+}
+
+.balloon2-left p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.title1 {
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 13px;
+}
+
+.teambox3 {
+  width: 330px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.button-area {
+  width: 140px;
+  height: 30px;
+}
+
+.teambox3 a {
+  display: block;
+  border-radius: 15px;
+  margin: 0;
+  color: #494949;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Inter;
+}
+
+.teambox1 {
+  margin: 60px auto 0 auto;
+  border-top: solid 3px rgb(236, 87, 138);
+  border-bottom: solid 3px rgb(236, 87, 138);
+  background-color: #ffebef;
+  height: 168px;
+  width: 360px;
+}
+
+.profile_texts h1 {
+  height: 28px;
+  text-align: center;
+  color: #ec578a;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Inter;
+}
+
+.profile_texts h2 {
+  height: 27px;
+  text-align: center;
+  margin: 0;
+  color: #494949;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.profile_texts .flex-wrapper h1{
+  color: #494949;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.profile_texts .flex-wrapper {
+  width: 130px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.profile_texts h3 {
+  text-align: center;
+  color: #565656;
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.profile button {
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(236, 87, 138);
+  color: white;
+  transition: 0.3s;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.button_box {
+  width: 100px;
+  height: 30px;
+  margin: 10px auto 0 auto;
+}
+
+.profile_box {
+  width: 180px;
+  height: 300px;
+  text-align: center;
+}
+
+.image {
+  width: 180px;
+  height: 150px;
+  display: flex;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+.profile {
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+#profile-group-hp,
+#profile-group-competition,
+#profile-group-security,
+#profile-group-web,
+#profile-group-ds,
+#profile-group-app {
+  margin: 5px auto;
+  background-color: #d9d9d9;
+}
+
+.profile_hp_title {
+  height: 80px;
+  width: 360px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.profile_hp_title p {
+  width: 150px;
+  height: 40px;
+  margin: auto;
+  font-size: 24px;
+}
+
+.profileHpBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 3s;
+  opacity: 0;
+}
+
+.profileComBoxes,
+.profileSecBoxes,
+.profileWebBoxes,
+.profileDsBoxes,
+.profileAppBoxes {
+  opacity: 0;
+  transition: all 3s;
+}
+
+.profileHpBoxes.active,
+.profileComBoxes.active,
+.profileSecBoxes.active,
+.profileWebBoxes.active,
+.profileDsBoxes.active,
+.profileAppBoxes.active {
+  opacity: 1;
+}
+
+button {
+  margin-top: 13px;
+}
+
+.teamName {
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline rgb(236, 87, 138);
+  padding: 24px 0;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.teamName.active {
+  opacity: 1;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile_texts .flex-wrapper {
+  display: flex;
+  flex-wrap: unset;
+}
+
+.team {
+  position: relative;
+}
+
+.team::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  width: 1px;
+  height: 15px;
+  top: 4px;
+  left: 70px;
+  transform: rotate(40deg);
+}
+
+
+/* カード */
+.card {
+  width: 360px;
+  height: 225px;
+  display: flex;
+  background-color: white;
+}
+
+.card_contents {
+  width: 325px;
+  display: flex;
+  justify-content: space-between;
+  margin: 34px auto auto auto;
+}
+
+.card_left {
+  width: 125px;
+}
+
+.card_left h2{
+  color: #ec578a;
+}
+
+.card img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card_right {
+  width: 175px;
+  margin-top: 25px;
+}
+
+.card_right h3:first-child{
+  position: relative;
+}
+
+.card_right h3:first-child::after{
+  content: "";
+  display: block;
+  background-color: #000;
+  position: absolute;
+  width: 2px;
+  transform: rotate(35deg);
+  height: 20px;
+  top: 3px;
+  left: 75px;
+}
+
+.card_right .flex-wrapper{
+  width: 161px;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  padding: 10px;
+  border-radius: 4px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: 2;
+}
+/* カードここまで */

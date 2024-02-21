@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title Here</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/profile.css"
+      media="all"
+    />
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="hamburger-menu">
+        <p>コンピュータ研究会・WINC</p>
+        <input type="checkbox" id="menu-btn-check" />
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="#">MEMBER PROFILE</a>
+            </li>
+            <li>
+              <a href="#">ACCOUNTING</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="balloon2-left C">
+        <div class="hukidasi_head">
+          <div class="batu_wrapper">
+            <button class="batu">✕</button>
+          </div>
+        </div>
+        <a href="#" class="TOP_a">TOP</a>
+        <a href="#profile-group-hp">HP</a>
+        <a href="#profile-group-competition">競プロ</a>
+        <a href="#profile-group-security">セキュリティ</a>
+        <a href="#profile-group-web">WEB</a>
+        <a href="#profile-group-ds">データサイエンス</a>
+        <a href="#profile-group-app">アプリ</a>
+        <div class="registration_wrapper">
+          <button onclick="batu">追加登録</button>
+        </div>
+      </div>
+      <div class="minihukidasi">
+        <div class="minihukidasi_head">
+          <button class="side_menu">
+            >><br />メ<br />二<br />
+            ュ<br />
+            |
+          </button>
+        </div>
+      </div>
+      <div class="teambox1">
+        <div class="titlebox">
+          <p class="title1">TEAMS</p>
+        </div>
+        <div class="teambox3">
+          <div class="button-area">
+            <a href="#profile-group-hp">HP</a>
+          </div>
+          <div class="button-area">
+            <a href="#profile-group-hp">競プロ</a>
+          </div>
+          <div class="button-area">
+            <a href="#profile-group-security">セキュリティ</a>
+          </div>
+          <div class="button-area">
+            <a href="#profile-group-web">WEB</a>
+          </div>
+          <div class="button-area">
+            <a href="#profile-group-ds">データサイエンス</a>
+          </div>
+          <div class="button-area">
+            <a href="#profile-group-app">アプリ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- カード -->
+      <div id="mask" class="hidden"></div>
+      <section id="modal" class="hidden">
+        <div class="card">
+          <div class="card_contents">
+            <div class="card_left">
+              <img url="" />
+              <h2>名前　名前</h2>
+            </div>
+            <div class="card_right">
+              <div class="flex-wrapper">
+                <h3>役職</h3>
+                <h3>チーム</h3>
+              </div>
+              <h3>早稲田大学基幹理工学部</h3>
+              <p>
+                テキストテキストテキスト<br />テキストテキストテキスト<br />テキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- カード -->
+
+      <div class="profile">
+        <div id="profile-group-hp">
+          <div class="profile_hp_title">
+            <p class="teamName">HPチーム</p>
+          </div>
+          <div class="profileHpBoxes">
+            <div class="profile_box">
+              <div class="image">
+                <img src="" />
+              </div>
+              <div class="profile_texts">
+                <h1>名前　名前</h1>
+                <div class="flex-wrapper">
+                  <h2>HPチーム</h2>
+                  <h1>/</h1>
+                  <h2>メンバー</h2>
+                </div>
+                <h3>早稲田大学　基幹理工学部</h3>
+                <button class="detail-btn">詳細</button>
+              </div>
+            </div>
+            <div class="profile_box">
+              <div class="image">
+                <img src="" />
+              </div>
+              <div class="profile_texts">
+                <h1>名前　名前</h1>
+                <div class="flex-wrapper">
+                  <h2>HPチーム</h2>
+                  <h1>/</h1>
+                  <h2>メンバー</h2>
+                </div>
+                <h3>早稲田大学　基幹理工学部</h3>
+                <button class="detail-btn">詳細</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="profile-group-competition">
+          <p class="teamName">競技プログラミングチーム</p>
+          <div class="profileComBoxes">
+            <div class="flex-wrapper">
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="profile-group-security">
+          <p class="teamName">セキュリティチーム</p>
+          <div class="profileSecBoxes">
+            <div class="flex-wrapper">
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="profile-group-web">
+          <p class="teamName">WEBチーム</p>
+          <div class="profileWebBoxes">
+            <div class="flex-wrapper">
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="profile-group-ds">
+          <p class="teamName">データサイエンスチーム</p>
+          <div class="profileDsBoxes">
+            <div class="flex-wrapper">
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="profile-group-app">
+          <p class="teamName">アプリチーム</p>
+          <div class="profileAppBoxes">
+            <div class="flex-wrapper">
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+              <div class="profile_box">
+                <img src="" alt="" />
+                <div class="profile_texts">
+                  <h1>名前　名前</h1>
+                  <div class="flex-wrapper">
+                    <h2>HPチーム</h2>
+                    <h1>/</h1>
+                    <h2>メンバー</h2>
+                  </div>
+                  <h3>早稲田大学　文学部</h3>
+                  <button class="detail-btn">詳細</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      // チーム名
+      $(function () {
+        $(window).scroll(function () {
+          $(".teamName").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+
+      //   プロフィール
+      $(function () {
+        $(window).scroll(function () {
+          $(".profileHpBoxes").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+
+      $(function () {
+        $(window).scroll(function () {
+          $(".profileComBoxes").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+
+      $(function () {
+        $(window).scroll(function () {
+          $(".profileSecBoxes").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+
+      $(function () {
+        $(window).scroll(function () {
+          $(".profileWebBoxes").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+
+      $(function () {
+        $(window).scroll(function () {
+          $(".profileDsBoxes").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+
+      $(function () {
+        $(window).scroll(function () {
+          $(".profileAppBoxes").each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+              $(this).addClass("active");
+            }
+          });
+        });
+      });
+
+      //   サイドメニュー
+      $(function () {
+        $(".minihukidasi").click(function () {
+          $(".minihukidasi").toggleClass("C");
+          $(".balloon2-left").toggleClass("C");
+        });
+      });
+      $(function () {
+        $(".batu").click(function () {
+          $(".minihukidasi").toggleClass("C");
+          $(".balloon2-left").toggleClass("C");
+        });
+      });
+
+      // カード
+      const detailBtn = document.querySelectorAll(".detail-btn");
+      const mask = document.getElementById("mask");
+      const modal = document.getElementById("modal");
+
+      detailBtn.forEach(function (detailBtn) {
+        detailBtn.addEventListener("click", () => {
+          mask.classList.remove("hidden");
+          modal.classList.remove("hidden");
+        });
+      });
+
+      mask.addEventListener("click", () => {
+        mask.classList.add("hidden");
+        modal.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 36px;
+}
+
+p{
+    font-size: 20px;
+    height: 24px;
+}
+
+.container{
+    max-width: 332px;
+    margin: 0 auto;
+}
+
+form{
+    margin-top: 50px;
+    height: 100vh;
+}
+
+input{
+    background-color: #D9D9D9;
+    border: 0.5px solid #000;
+    border-radius: 5px;
+}
+
+select{
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.name-area{
+    margin-left: 79px;
+    width: 213px;
+    height: 30px;
+}
+
+.team-select{
+    margin-left: 59px;
+}
+
+.post-select{
+    margin-left: 79px;
+}
+
+select{
+    width: 87px;
+    height: 19px;
+}
+
+.mini-title{
+    margin-top: 31px;
+}
+
+.university-area{
+    margin-left: 19px;
+    width: 213px;
+    height: 20px;
+}
+
+.profile-title{
+    height: 150px;
+    margin-top: 31px;
+}
+
+.profile-area{
+    margin-left: 39px;
+    width: 213px;
+    height: 150px;
+}
+
+.flex-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 49px;
+}
+
+label input{
+    display: none;
+}
+
+label{
+    background-color: #EC578A;
+    width: 119px;
+    height: 78px;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 19px;
+}
+
+.send{
+    width: 111px;
+    height: 57px;
+    background-color: #EC578A;
+    color: #FFF;
+    border: none;
+    font-size: 32px;
+}

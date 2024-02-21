@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Accounting</title>
+    <link rel="stylesheet" type="text/css" href="../styles/accounting.css" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <div class="hamburger-menu">
+            <p>コンピュータ研究会・WINC</p>
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="#">MEMBER PROFILE</a>
+                    </li>
+                    <li>
+                        <a href="#">MONEY</a>
+                    </li>
+                    <li>
+                        <a href="#">GALLERY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+  
+    <main>
+        <div class="container">
+         <div class="container2">
+            <div class="balance_box">
+                <p class="balance">｜残高</p>
+                    <div class="balance_box2">
+                        <form>
+                            <div class="box1">
+                                <input type="text" name="name" id="namelabel" placeholder="100,000">
+                            </div>
+                        </form>
+                        <div class="enn_box">
+                            <p class="enn">円</p>
+                        </div>  
+                    </div>
+            </div>
+
+            <div class="month_balance_box">
+                <p class="month_balance">｜今期の収支</p>
+                <div class="month_balance_box2">
+                    <div class="month_balance_text1">
+                        <p class="month_balance_text1_p">収入</p>
+                        <p class="month_balance_number1">400,000</p>
+                    </div>                       
+                    <div class="month_balance_text2">
+                        <p class="month_balance_text2_p">支出</p>
+                        <p class="month_balance_number2">400,000</p>
+                    </div>                       
+                    <div class="month_balance_text3">
+                        <p class="month_balance_text3_p">差額残高</p>
+                        <p class="month_balance_number3">0</p>
+                    </div>                       
+                </div>
+            </div>
+
+            <div class="transition_box">
+                <p class="transition">｜月ごとの残高推移</p>
+                <div class="imge_box">
+                    <img src="../images/chart.jpg">
+                </div>
+            </div>
+
+            <div class="year_balance_box">
+                <p class="year_balance">｜今期の収支</p>
+                <div class="year_balance_box2">
+                    <div class="year_balance_text1">
+                        <p class="year_balance_text1_p">収入</p>
+                        <p class="year_balance_number1">400,000</p>
+                    </div>                       
+                    <div class="year_balance_text2">
+                        <p class="year_balance_text2_p">支出</p>
+                        <p class="year_balance_number2">400,000</p>
+                    </div>                       
+                    <div class="year_balance_text3">
+                        <p class="year_balance_text1_p">差額残高</p>
+                        <p class="year_balance_number3">0</p>
+                    </div>                       
+                </div>
+            </div>
+
+
+            <div class="ratio_box">
+                <p class="ratio_text">｜比率</p>
+                <div class="chart-wrapper">
+                    <div class="graph_circle">
+                        <canvas class="myChart"></canvas>
+                    </div>
+                    <div class="graph_circle2">
+                        <canvas class="myChart2"></canvas>
+                    </div>
+                </div>
+                <div class="meisai_text_box2">
+                <div class="meisai_text_box">
+                <div class="meisai_text1">
+                    チームごとの使用額
+                </div>
+                <div class="meisai_text2">
+                    使用目的
+                </div>
+                </div>
+            </div>
+                
+
+                <div class="botton"> 
+                    <button type="button1" class="button1">明細へ</button>
+                </div>
+            </div> 
+            
+
+        </div>
+
+    </main>
+    <script>
+        const ctx = document.getElementsByClassName("myChart")
+
+
+        const percentage = 76 
+        const backgroundColor = 'rgb(236, 87, 138)' 
+
+            new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                data: [percentage, 100 - percentage],
+                backgroundColor: [
+                    backgroundColor, 
+                    'rgba(0, 0, 0, 0)',
+                ],
+                borderWidth: 0
+                }]
+            }
+            })
+
+        const ctx2 = document.getElementsByClassName("myChart2")
+
+        const percentage2 = 76 
+        const backgroundColor2 = 'rgb(236, 87, 138)' 
+
+            new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                data: [50, 50],
+                backgroundColor: [
+                    backgroundColor2, 
+                    'rgba(0, 0, 0, 0)',
+                ],
+                borderWidth: 0
+                }]
+            }
+            })    
+    </script>
+  </body>
+</html>
