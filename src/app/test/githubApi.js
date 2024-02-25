@@ -1,6 +1,6 @@
 
 const organization = 'winc1980';
-const githubToken = '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'; // セキュリティのためにトークンは公開しないようにしましょう
+const githubToken = process.env.React_APP_OPENWEATHERMAP_API_KEY; 
 
 async function getRepoList(organization, githubToken) {
   const apiUrl = `https://api.github.com/orgs/${organization}/repos`;
