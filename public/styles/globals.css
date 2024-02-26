@@ -1,1 +1,287 @@
 @charset "UTF-8";
+
+.Container{
+    align-items: center;
+    position: relative;
+}
+.Container h1{
+    position: absolute;
+    left: 30%;
+    top: 86%;
+    font-size: 40px; 
+}
+.Container p{
+    position: absolute;
+    left: 37%;
+    top: 152%;
+    font-size: 11px;
+    
+}
+.profile{
+    width: 161px;
+    height: 22px;
+    font-size: 11px; 
+    position:absolute;
+    top:199%;
+    left: 21%;
+}
+.profile a{
+    position:absolute;
+    top: 26%;
+    left: 27%;
+}
+.reserve{
+    width: 161px;
+    height: 22px;
+    font-size: 11px; 
+    position:absolute;
+    top: 251%;
+    left: 21%;
+}
+.reserve a{
+    position:absolute;
+    top: 34%;
+    left: 41%;
+}
+.application{
+    width: 161px;
+    height: 22px;
+    font-size: 11px; 
+    position:absolute;
+    top:300%;
+    left:21%;
+}
+.application a{
+    width: 161px;
+    height: 22px;
+    font-size: 11px; 
+    position:absolute;
+    top:35%;
+    left:38%;
+}
+.top2 img{
+    position: absolute;
+    top: 306%;
+    left: 35%;
+}
+.flag img{
+    position:absolute;
+    top:91%;
+    left:5%;
+}
+.flag p{
+    position:absolute;
+    top:90%;
+    left:16%;
+
+}
+.room{
+    display: flex;
+    font-size: 16px;
+}
+.day{
+    position:absolute;
+    top:98%;
+    left:10%;
+}
+.time{
+    position:absolute;
+    top:98%;
+    left:40%;
+}
+.team{
+    position:absolute;
+    top:98%;
+    left:64%;
+}
+.first{
+    font-size: 14px;  
+    display: flex;
+}
+ .hizuke{
+    
+}
+.zikan{
+    padding: 0%; 
+}
+.name{
+    padding: 0%;
+} 
+.second{
+    display: flex;
+    font-size: 14px;
+}
+.hizuke2{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.third{
+    display: flex;
+    font-size: 14px;
+}
+.hizuke3{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.Container3{
+    position: absolute;
+    top: 104%;
+    left: 12%;
+}
+.view-more{
+    width: 121px;
+    height: 26px;
+    background-color:#ED588B;
+    border-radius: 0%;
+    position: absolute;
+    top:134%;
+    left: 31%;
+    border-top-left-radius: 50px;     /* 左上 */
+    border-top-right-radius: 50px;    /* 右上 */
+    border-bottom-right-radius: 50px; /* 右下 */
+    border-bottom-left-radius: 50px;  /* 左下 */
+}
+.view-more p{
+    color: white;
+    position: absolute;
+    top: -49%;
+    left: 14%;
+}
+
+.design img{
+    position: absolute;
+    top:139%;
+    left: 0%;
+}
+
+.commit img{
+    position: absolute;
+    top: 163%;
+    left: 4%;
+}
+.commit p{
+    position: absolute;
+    top: 163%;
+    left: 19%;
+    font-size: 18px;
+}
+.ranking{
+    display: flex;
+    margin-top: 283%;
+}
+.rank{
+    margin-left: 6%;
+    margin-right:20%;
+}
+.namae{
+    margin-left: 6%;
+    margin-right:26%;
+}
+.container__list{
+    display: flex;
+    justify-content: space-between;
+}
+.container__list--img{
+    width: 15%;
+    height: 10%;
+    margin-left: 0%;
+}
+.container__unit{
+    margin-left: 25px;
+    padding-left: 0;
+    margin-right: 20px;
+    margin-top: 290%;
+    position: absolute;
+    top: 18%;
+}
+
+.design2 img{
+    position: absolute;
+    top: 224%;
+    left: 49%;
+}
+.view-more2{
+    width: 121px;
+    height: 26px;
+    background-color:#ED588B;
+    position: absolute;
+    top:214%;
+    left: 31%;
+    border-top-left-radius: 50px;     /* 左上 */
+    border-top-right-radius: 50px;    /* 右上 */
+    border-bottom-right-radius: 50px; /* 右下 */
+    border-bottom-left-radius: 50px;
+}
+.view-more2 p{
+    color: white;
+    position: absolute;
+    top: -48%;
+    left: 15%;
+}
+.Container5{
+    position: relative;
+}
+.Container5 img{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -41%;
+    left: 3%;
+}
+
+.Container5 p{
+    margin-top: 125%;
+    margin-left: 15%;
+}
+.graph img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 288px;
+    height: 243px;
+}
+
+
+.suii{
+    display: flex;
+    position: relative;
+}
+.suii p{
+    font-size: 18px;
+    position: absolute;
+    top: -35%;
+    left: 6%;
+}
+.suii img{
+    width: 35px;
+    height: 35px;
+    margin-top: 0%;
+}
+.redesign img{
+    width: 217.79px;
+    height: 118.85px;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+.calender{
+    display: flex;
+    position: relative;
+}
+.calender p{
+    font-size: 18px;
+    position: absolute;
+    top: -35%;
+    left: 6%;
+}
+.calender img{
+    width: 35px;
+    height: 35px;
+    margin-top: 170%;
+}
+.calenderapi{
+    position: absolute;
+    top: 351%;
+    left: 9%;
+ 
+}
+

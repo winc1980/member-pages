@@ -21,8 +21,8 @@
           <p class="container__item--right">チーム</p>
         </div>
       </div>
-      <div class="container__area--month">
-        <p>月間</p>
+      <div class="container__area--cat">
+        <p id="last-month">月</p>
       </div>
       <div class="container__item--middle">
         <p>順位</p>
@@ -32,35 +32,181 @@
       <ul class="container__unit">
         <li class="container__list">
           <p>1</p>
-          <img class="container__list--img" src="C:\Users\kokir\Downloads\image 1.png" alt="">
-          <p>MORIMORO520212</p>
+          <img
+            class="container__list--img"
+            src="C:\Users\kokir\Downloads\image 1.png"
+            alt=""
+          />
+          <p>MORIMOTO520212</p>
           <p>99999</p>
         </li>
         <li class="container__list">
           <p>2</p>
-          <img class="container__list--img" src="C:\Users\kokir\Downloads\Ellipse 65.png" alt="">
+          <img
+            class="container__list--img"
+            src="C:\Users\kokir\Downloads\Ellipse 65.png"
+            alt=""
+          />
           <p>unkown</p>
           <p>10</p>
         </li>
         <li class="container__list">
           <p>3</p>
-          <img class="container__list--img" src="C:\Users\kokir\Downloads\Ellipse 65.png" alt="">
+          <img
+            class="container__list--img"
+            src="C:\Users\kokir\Downloads\Ellipse 65.png"
+            alt=""
+          />
           <p>fuma</p>
           <p>253</p>
         </li>
         <li class="container__list">
           <p>4</p>
-          <img class="container__list--img" src="C:\Users\kokir\Downloads\Ellipse 65.png" alt="">
+          <img
+            class="container__list--img"
+            src="C:\Users\kokir\Downloads\Ellipse 65.png"
+            alt=""
+          />
           <p>Yuto.jp</p>
           <p>253</p>
         </li>
         <li class="container__list">
           <p>5</p>
-          <img class="container__list--img" src="C:\Users\kokir\Downloads\Ellipse 65.png" alt="">
+          <img
+            class="container__list--img"
+            src="C:\Users\kokir\Downloads\Ellipse 65.png"
+            alt=""
+          />
           <p>kanako0424</p>
           <p>144</p>
         </li>
       </ul>
+        <div class="container__area--cat">
+          <p id="last-year">年</p>
+        </div>
+        <ul class="container__unit--2nd">
+          <li class="container__list">
+            <p>1</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\image 1.png"
+              alt=""
+            />
+            <p class="a">MORITORO520212</p>
+            <p>99999</p>
+          </li>
+          <li class="container__list">
+            <p>2</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt=""
+            />
+            <p>unkown</p>
+            <p>10</p>
+          </li>
+          <li class="container__list">
+            <p>3</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt=""
+            />
+            <p>fuma</p>
+            <p>253</p>
+          </li>
+          <li class="container__list">
+            <p>4</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt=""
+            />
+            <p>Yuto.jp</p>
+            <p>253</p>
+          </li>
+          <li class="container__list">
+            <p>5</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt="" />
+            <p>kanako0424</p>
+            <p>144</p>
+          </li>
+        </ul>
+        <div class="container__area--cat">
+          <p>累計</p>
+        </div>
+        <ul class="container__unit--3rd">
+          <li class="container__list">
+            <p>1</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\image 1.png"
+              alt=""
+            />
+            <p class="a">MORITORO520212</p>
+            <p>99999</p>
+          </li>
+          <li class="container__list">
+            <p>2</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt=""
+            />
+            <p>unkown</p>
+            <p>10</p>
+          </li>
+          <li class="container__list">
+            <p>3</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt=""
+            />
+            <p>fuma</p>
+            <p>253</p>
+          </li>
+          <li class="container__list">
+            <p>4</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt=""
+            />
+            <p>Yuto.jp</p>
+            <p>253</p>
+          </li>
+          <li class="container__list">
+            <p>5</p>
+            <img
+              class="container__list--img"
+              src="C:\Users\kokir\Downloads\Ellipse 65.png"
+              alt="" />
+            <p>kanako0424</p>
+            <p>144</p>
+          </li>
+        </ul>
+
     </div>
   </body>
 </html>
+<script>
+  (function () {
+    console.clear();
+    // 現在の日付を取得
+    var date = new Date();
+    var currentMonth = date.getMonth(); // 現在の月を取得し、1を加えて正しい月を取得
+    document.getElementById("last-month").textContent = currentMonth + "月";
+  })();
+  (function () {
+    console.clear();
+    // 現在の日付を取得
+    var date = new Date();
+    var currentYear = date.getFullYear(); // 現在の年を取得
+    var lastYear = currentYear - 1; // 前年の年を計算
+    document.getElementById("last-year").textContent = lastYear + "年"; // 前年の年を表示
+  })();
+</script>
