@@ -73,7 +73,18 @@
     position:absolute;
     top:90%;
     left:16%;
+    border-bottom: #ED588B;
 
+
+}
+.background{
+    width: 302px;
+    height: 148px;
+}
+.background img{
+    margin-top: 179%;
+    width: 302px;
+    height: 148px;
 }
 .room{
     display: flex;
@@ -98,18 +109,17 @@
     font-size: 14px;  
     display: flex;
 }
- .hizuke{
-    
+ /* .hizuke{
+    margin-left: -4%;
 }
 .zikan{
-    padding: 0%; 
-}
-.name{
-    padding: 0%;
-} 
+    margin-left: 22%;
+}  */
 .second{
     display: flex;
     font-size: 14px;
+    position: absolute;
+    top: 108%;
 }
 .hizuke2{
     margin-left: 0%;
@@ -118,6 +128,8 @@
 .third{
     display: flex;
     font-size: 14px;
+    position: absolute;
+    top: 115%;
 }
 .hizuke3{
     margin-left: 0%;
@@ -167,7 +179,7 @@
 }
 .ranking{
     display: flex;
-    margin-top: 283%;
+    margin-top: 244%;
 }
 .rank{
     margin-left: 6%;
@@ -180,6 +192,7 @@
 .container__list{
     display: flex;
     justify-content: space-between;
+
 }
 .container__list--img{
     width: 15%;
@@ -234,9 +247,8 @@
     margin-left: 15%;
 }
 .graph img{
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    margin-top: 141%;
+    margin-left: 0%;
     width: 288px;
     height: 243px;
 }
@@ -248,19 +260,19 @@
 }
 .suii p{
     font-size: 18px;
-    position: absolute;
-    top: -35%;
-    left: 6%;
+    margin-top: 126%;
+    margin-left: 13%;
 }
 .suii img{
     width: 35px;
     height: 35px;
-    margin-top: 0%;
+    position: absolute;
+    top: 89%;
 }
 .redesign img{
     width: 217.79px;
     height: 118.85px;
-    margin-top: 20px;
+    margin-top:306px;
     margin-left: -15px;
 }
 .calender{
@@ -270,18 +282,19 @@
 .calender p{
     font-size: 18px;
     position: absolute;
-    top: -35%;
-    left: 6%;
+    top: 23%;
+    left: 12%;
 }
 .calender img{
     width: 35px;
     height: 35px;
-    margin-top: 170%;
+    margin-top: 6%;
 }
 .calenderapi{
     position: absolute;
-    top: 351%;
+    top: 334%;
     left: 9%;
  
 }
+
 
