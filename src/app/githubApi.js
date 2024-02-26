@@ -106,10 +106,7 @@ export async function createRanking() {
   rankedUsers.sort((a, b) => b.commits - a.commits);
 
   // 結果を表示
-  console.log("コミット数ランキング:");
-  rankedUsers.forEach((user, index) => {
-    console.log(`${index + 1}. ${user.author}: ${user.commits}`);
-  });
+  rankedUsers.forEach((user, index) => {});
   return rankedUsers;
 }
 
@@ -191,11 +188,7 @@ export async function createMonthlyRanking() {
   // コミット数でソート
   rankedUsers.sort((a, b) => b.monthlyCommits - a.monthlyCommits); // ここも変更しました
 
-  // 結果を表示
-  console.log("前月のコミット数ランキング:");
-  rankedUsers.forEach((user, index) => {
-    console.log(`${index + 1}. ${user.author}: ${user.monthlyCommits}`); // そしてここも変更しました
-  });
+  rankedUsers.forEach((user, index) => {});
   return rankedUsers;
 }
 
@@ -277,10 +270,7 @@ export async function createYearlyRanking() {
   rankedUsers.sort((a, b) => b.yearlyCommits - a.yearlyCommits); // ここも変更しました
 
   // 結果を表示
-  console.log("今年のコミット数ランキング:");
-  rankedUsers.forEach((user, index) => {
-    console.log(`${index + 1}. ${user.author}: ${user.yearlyCommits}`); // そしてここも変更しました
-  });
+  rankedUsers.forEach((user, index) => {});
   return rankedUsers;
 }
 
