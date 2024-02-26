@@ -1,20 +1,32 @@
-// Linkコンポーネントインポートする
-import Link from "next/link";
+import { createYearlyRanking,createMonthlyRanking, createRanking } from './githubApi';
 
-// ファイル呼び出し時のエントリーポイント
-export default function FirstPost() {
+export default async function Page() {
   return (
-    // HTMLの範囲を示す何らかのタグが必要。
-    // 今回は空タグを使用しているが<div>等でもよい
-    <>
-      <h1>First Post</h1>
-      <h2>
-        {/* リンク先をhrefで指定する */}
-        <Link href="/">
-          {/* 表示したい文字を<a>タグで囲う */}
-          <p>a</p>
-        </Link>
-      </h2>
-    </>
+    <div>
+      <h1>年間コミット数ランキング</h1>
+      <div>
+        {(await createYearlyRanking()).map((user, index) => (
+          <div key={index}>
+            {user.author}: {user.yearlyCommits}
+          </div>
+        ))}
+      </div>
+      <h1>月間コミット数ランキング</h1>
+      <div>
+        {(await createMonthlyRanking()).map((user, index) => (
+          <div key={index}>
+            {user.author}: {user.monthlyCommits}
+          </div>
+        ))}
+      </div>
+      <h1>コミット数ランキング</h1>
+      <div>
+      {(await createRanking()).map((user, index) => (
+          <div key={index}>
+            {user.author}: {user.commits}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
