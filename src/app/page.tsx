@@ -2,12 +2,25 @@
 
 // import Image from "next/image";
 // import Link from "next/link";
+import { useState } from "react";
 import axios from "axios";
 
-export default function Home() {
+export default function Home({ initialData }) {
+  const [sheetData, setSheetData] = useState(initialData);
+
   const getData = async () => {
-    const response = await axios.get("https://sheets.googleapis.com/v4/spreadsheets/1bzBTNLWFxNaKZG9Lud41QR9OrtfbJaQCOAOJZQePQqQ/values/シート1?key=AIzaSyDSvgOu2Dxm2v41opbiIOk3gSVdQakmQRI");
-    console.log(response);
+    try {
+      // APIKeyは各自で取得
+      const response = await axios.get("https://sheets.googleapis.com/v4/spreadsheets/1bzBTNLWFxNaKZG9Lud41QR9OrtfbJaQCOAOJZQePQqQ/values/シート1?key=");
+      const team = response['data']['values'][0];
+      const budget = response['data']['values'][1];
+      console.log(team);
+      console.log(budget);
+      setSheetData(response['data']['values']);
+      console.log(sheetData);
+    } catch(error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   const handleClick = () => {
@@ -23,9 +36,16 @@ export default function Home() {
         >
           getDate
         </button>
-        
+        {sheetData && (
+        <div>
+          {/* <p>{ sheetData }</p> */}
+          <p>{ sheetData[0][0] }</p>
+          <p>{ sheetData[0][1] } : { sheetData[1][0]}</p>
+          <p>{ sheetData[0][2] } : { sheetData[1][1]}</p>
+          <p>{ sheetData[0][3] } : { sheetData[1][2]}</p>
+        </div>
+      )}
       </div>
     </main>
   );
 }
-
