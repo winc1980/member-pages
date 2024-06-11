@@ -1,0 +1,226 @@
+.left-decoration {
+  margin-top: 30px;
+  width: 25%;
+}
+
+.right-decoration {
+  display: block;
+  margin: 30px 0 0 auto;
+  width: 25%;
+}
+
+.fv {
+  text-align: center;
+  position: relative;
+}
+
+.fv h1 {
+  font-size: calc(3vw + 1.5rem);
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.fv h2 {
+  font-size: calc(1vw + 0.5rem);
+  margin-bottom: 50px;
+}
+
+h3 {
+  text-align: center;
+  font-size: calc(1vw + 0.8rem);
+  border-bottom: #ea5a8b;
+  display: block;
+  border-bottom: solid 2px #ea5a8b;
+  margin-top: 40px;
+}
+
+.fv-topLeft-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fv-bottomRight-img {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+
+.link-buttons {
+  padding-bottom: 20px;
+}
+
+.link-button {
+  display: block;
+  width: 180px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  padding: 0.8rem 4rem;
+  color: rgb(33, 31, 31);
+  border: solid 1px #ea5a8b;
+  border-radius: 10rem;
+  background: -webkit-gradient(-45deg, #ea5a8b 35%, #fff);
+  background: linear-gradient(-45deg, #ea5a8b, #fff);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.bookings h3 {
+  width: calc((1vw + 0.8rem) * 9);
+}
+
+.fa-flag {
+  font-size: 35px;
+  color: rgb(105, 102, 102);
+  margin-right: 5px;
+}
+
+.commits-rank h3 {
+  width: calc((1vw + 0.8rem) * 15);
+}
+
+.ranking-container {
+  background-color: white;
+  width: 60%;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.ranking-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff3366;
+}
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ranking-table th,
+.ranking-table td {
+  padding: 10px;
+}
+.ranking-table th {
+  font-size: 1em;
+  color: #666;
+}
+.ranking-table tbody tr {
+  border-bottom: 2px solid #ff3366;
+}
+.ranking-table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.rank-number {
+  font-size: 1.2em;
+}
+.rank-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.rank-commit {
+  font-size: 1.2em;
+}
+.icon1 {
+  background: url("https://img.icons8.com/ios-filled/50/000000/japan.png")
+    no-repeat center/cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.icon2,
+.icon3 {
+  background: #ccc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.transition {
+  text-align: center;
+}
+
+.transition h3 {
+  width: calc((1vw + 0.8rem) * 5);
+}
+
+.transition-placeholder {
+  width: 50%;
+}
+
+.fa-chart-simple {
+  font-size: 35px;
+  color: rgb(105, 102, 102);
+  margin-right: 5px;
+}
+
+.calendar-container {
+  margin-top: 30px;
+  height: auto;
+}
+
+.calendar-normal {
+  display: block;
+  margin: 60px auto 0 auto;
+  aspect-ratio: 1;
+}
+
+.calendar-container h3 {
+  width: calc((1vw + 0.8rem) * 7);
+}
+
+.fa-calendar-days {
+  font-size: 35px;
+  color: rgb(105, 102, 102);
+  margin-right: 5px;
+}
+
+.bottom-decoration {
+  display: block;
+  margin: 40px 0 0 auto;
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .fv-topLeft-img {
+    width: 30%;
+  }
+
+  .fv-bottomRight-img {
+    width: 30%;
+  }
+
+  .link-button {
+    width: 30%;
+    height: 20px;
+  }
+
+  .ranking-container {
+    width: 80%;
+  }
+
+  .transition-placeholder {
+    width: 70%;
+  }
+
+  .fa-calendar-days {
+    font-size: 20px;
+    color: rgb(105, 102, 102);
+    margin-right: 5px;
+  }
+
+  .calendar-normal {
+    width: 70%;
+  }
+}
