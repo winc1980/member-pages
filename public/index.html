@@ -7,115 +7,126 @@
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
-    <main>
-      <div class="fv">
-        <img
-          class="fv-topLeft-img"
-          src="images/fv-topLeft-decoration.png"
-          alt=""
-          width="20%"
-        />
-        <img
-          class="fv-bottomRight-img"
-          src="images/fv-bottomRight-decoration.png"
-          alt=""
-          width="20%"
-        />
-        <h1>WINC</h1>
-        <h2>会員専用ページ</h2>
-        <div class="link-buttons">
-          <a class="link-button" href="#">プロフィール一覧</a>
-          <a class="link-button" href="#">部室予約</a>
-          <a class="link-button" href="#">部費の申請</a>
+    <div class="container">
+      <main>
+        <div class="fv">
+          <img
+            class="fv-topLeft-img"
+            src="images/fv-topLeft-decoration.png"
+            alt=""
+            width="20%"
+          />
+          <img
+            class="fv-bottomRight-img"
+            src="images/fv-bottomRight-decoration.png"
+            alt=""
+            width="20%"
+          />
+          <h1>WINC</h1>
+          <h2>会員専用ページ</h2>
+          <div class="link-buttons">
+            <a class="link-button" href="#">プロフィール一覧</a>
+            <a
+              class="link-button"
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdUdvnCraU9GJ0R9I1o5xqvvqmzstQXgTvlPKkIoB2S4inQBw/viewform"
+              >部室予約</a
+            >
+            <a class="link-button" href="#">部費の申請</a>
+          </div>
         </div>
-      </div>
-      <div class="bookings">
-        <h3><i class="fa-solid fa-flag"></i>部室予約状況</h3>
-        <iframe
-          class="calendar-normal"
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showTitle=0&src=YjZxYXZ2dm42YnZndHU0aWwyZXBhazJwbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&mode=AGENDA"
-          style="border: solid 1px #777"
-          width="50%"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </div>
-
-      <img class="left-decoration" src="images/left-decoration.png" alt="" />
-
-      <div class="commits-rank">
-        <h3>
-          <i class="fa-solid fa-calendar-days"></i>Githubコミット数ランキング
-        </h3>
-        <div class="ranking-container">
-          <table class="ranking-table">
-            <thead>
-              <tr>
-                <th>順位</th>
-                <th>名前</th>
-                <th>コミット数</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="rank-number">1</td>
-                <td class="rank-name">
-                  <div class="icon1"></div>
-                  fuma
-                </td>
-                <td class="rank-commit">30</td>
-              </tr>
-              <tr>
-                <td class="rank-number">2</td>
-                <td class="rank-name">
-                  <div class="icon2"></div>
-                  ふーま
-                </td>
-                <td class="rank-commit">20</td>
-              </tr>
-              <tr>
-                <td class="rank-number">3</td>
-                <td class="rank-name">
-                  <div class="icon3"></div>
-                  ふま
-                </td>
-                <td class="rank-commit">10</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="bookings">
+          <h3><i class="fa-solid fa-flag"></i>部室予約状況</h3>
+          <iframe
+            class="calendar-normal"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showTitle=0&src=YjZxYXZ2dm42YnZndHU0aWwyZXBhazJwbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&mode=AGENDA"
+            style="border: solid 1px #777"
+            width="80%"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
         </div>
-      </div>
 
-      <img class="right-decoration" src="images/right-decoration.png" alt="" />
+        <img class="left-decoration" src="images/left-decoration.png" alt="" />
 
-      <div class="transition">
-        <h3><i class="fa-solid fa-chart-simple"></i>推移</h3>
+        <div class="commits-rank">
+          <h3>
+            <i class="fa-solid fa-calendar-days"></i>Githubコミット数ランキング
+          </h3>
+          <div class="ranking-container">
+            <table class="ranking-table">
+              <thead>
+                <tr>
+                  <th>順位</th>
+                  <th>名前</th>
+                  <th>コミット数</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="rank-number">1</td>
+                  <td class="rank-name">
+                    <div class="icon1"></div>
+                    fuma
+                  </td>
+                  <td class="rank-commit">30</td>
+                </tr>
+                <tr>
+                  <td class="rank-number">2</td>
+                  <td class="rank-name">
+                    <div class="icon2"></div>
+                    ふーま
+                  </td>
+                  <td class="rank-commit">20</td>
+                </tr>
+                <tr>
+                  <td class="rank-number">3</td>
+                  <td class="rank-name">
+                    <div class="icon3"></div>
+                    ふま
+                  </td>
+                  <td class="rank-commit">10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <img
-          class="transition-placeholder"
-          src="images/スクリーンショット 2024-02-26 153212.png"
+          class="right-decoration"
+          src="images/right-decoration.png"
+          alt=""
         />
-      </div>
 
-      <img class="left-decoration" src="images/left-decoration.png" alt="" />
+        <div class="transition">
+          <h3><i class="fa-solid fa-chart-simple"></i>推移</h3>
+          <img
+            class="transition-placeholder"
+            src="images/スクリーンショット 2024-02-26 153212.png"
+          />
+        </div>
 
-      <div class="calendar-container">
-        <h3><i class="fa-solid fa-calendar-days"></i>カレンダー</h3>
-        <iframe
-          class="calendar-normal"
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showTitle=0&src=YjZxYXZ2dm42YnZndHU0aWwyZXBhazJwbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&"
-          style="border: solid 1px #777"
-          width="50%"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </div>
-      <img
-        class="bottom-decoration"
-        src="images/bottom-decoration.png"
-        alt=""
-      />
-    </main>
-    <footer></footer>
+        <img class="left-decoration" src="images/left-decoration.png" alt="" />
+
+        <div class="calendar-container">
+          <h3><i class="fa-solid fa-calendar-days"></i>カレンダー</h3>
+          <iframe
+            class="calendar-normal"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showTitle=0&src=YjZxYXZ2dm42YnZndHU0aWwyZXBhazJwbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000&"
+            style="border: solid 1px #777"
+            width="80%"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <img
+          class="bottom-decoration"
+          src="images/bottom-decoration.png"
+          alt=""
+        />
+      </main>
+      <footer></footer>
+    </div>
     <script
       src="https://kit.fontawesome.com/4d77871994.js"
       crossorigin="anonymous"
