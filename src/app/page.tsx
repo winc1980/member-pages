@@ -1,4 +1,5 @@
 import { auth } from "@/auth";
+import AuthButton from "@/components/AuthButton.server";
 import { type FC } from "react";
 
 const Home: FC = async () => {
@@ -13,6 +14,7 @@ const Home: FC = async () => {
       <pre className="bg-slate-100 p-2 text-sm text-slate-700">
        {JSON.stringify(session, null, 2)}
      </pre>
+     <AuthButton />
     </div>
   );
 };
