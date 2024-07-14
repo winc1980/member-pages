@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import styles from "./Header.module.css";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -11,6 +12,7 @@ export default function Header() {
       {/* ヘッダー　ここから */}
       <header>
         <div className={styles["hamburger-menu"]}>
+          <Image src="/images/winc_logo.webp" alt=""  width={50} height={50}/>
           <p className="text-lg font-bold">コンピュータ研究会・WINC</p>
           <input
             type="checkbox"
@@ -23,7 +25,7 @@ export default function Header() {
           <div className={styles["menu-content"]}>
             <ul>
               <li>
-                <a href="#">top</a>
+                <a href="#">TOP</a>
               </li>
               <li>
                 <a href="#">メンバー一覧</a>
