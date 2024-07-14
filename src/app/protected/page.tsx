@@ -1,5 +1,6 @@
 import { auth } from "@/auth";
 import WhoAmIServerAction from "./WhoAmIServerAction";
+import WhoAmIAPI from "./WhoAmIAPI";
 
 export default async function TestRoute() {
   const session = await auth();
@@ -9,6 +10,7 @@ export default async function TestRoute() {
       <h1 className="text-3xl mb-5">Test Route</h1>
       <div>User: {session?.user?.name}</div>
       <WhoAmIServerAction />
+      <WhoAmIAPI />
     </main>
   );
 }
