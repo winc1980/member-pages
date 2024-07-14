@@ -10,7 +10,7 @@ const authOptions: NextAuthConfig = {
       name: "Credentials",
       // 認証フォームのフィールド
       credentials: {
-        username: { label: "Username", type: "text", placeholder: "jsmith" },
+        email: { label: "Email", type: "text", placeholder: "WINCの入会フォームに登録したメールアドレスを入力してください" },
         password: { label: "Password", type: "password" },
       },
       // 認証処理
@@ -19,10 +19,10 @@ const authOptions: NextAuthConfig = {
         const users = [
           {
             id: "test-user-1",
-            userName: "test1",
-            name: "Test 1",
+            userName: "ふうま",
+            name: "鈴木 風真",
             password: "qk5lSJ3maQ0pqmOyadTQRgN1K",
-            email: "test1@example.com",
+            email: "huma0818gta@gmail.com",
           },
           {
             id: "test-user-2",
@@ -35,7 +35,7 @@ const authOptions: NextAuthConfig = {
         // ユーザー情報の検索
         const user = users.find(
           (user) =>
-            user.userName === credentials.username &&
+            user.email === credentials.email &&
             user.password === credentials.password
         );
         // ユーザー情報の返却
