@@ -36,6 +36,9 @@ export default function Header() {
               <li>
                 <a href="#">会計</a>
               </li>
+              <li>
+                <a href="#">サインアウト</a>
+              </li>
             </ul>
           </div>
         </div>
