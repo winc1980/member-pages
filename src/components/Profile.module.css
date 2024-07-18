@@ -1,0 +1,13 @@
+.profile-container {
+  width: 80%;
+  height: 100px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+}
+
+.loading p {
+  margin-left: 10px;
+}
