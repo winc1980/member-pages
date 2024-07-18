@@ -1,0 +1,11 @@
+.footerClass {
+  display: flex;
+  color: white;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(199, 55, 106);
+}
+
+.footerClass small {
+  margin: auto;
+}

@@ -1,4 +1,4 @@
-header {
+.headerClass {
   width: 100vw;
   height: 50px;
   position: fixed;
@@ -14,7 +14,6 @@ header {
 
 .hamburger-menu p {
   height: 20px;
-  font-size: 12px;
   margin: auto auto auto 5px;
 }
 
@@ -29,11 +28,11 @@ header {
   background-color: rgb(236, 87, 138);
 }
 
-#menu-btn-check {
+.menu-btn-check {
   display: none;
 }
 
-#menu-btn-check:checked ~ .menu-btn span {
+.menu-btn-check:checked ~ .menu-btn span {
   background-color: rgba(
     255,
     255,
@@ -41,11 +40,11 @@ header {
     0
   ); /*メニューオープン時は真ん中の線を透明にする*/
 }
-#menu-btn-check:checked ~ .menu-btn span::before {
+.menu-btn-check:checked ~ .menu-btn span::before {
   bottom: 0;
   transform: rotate(45deg);
 }
-#menu-btn-check:checked ~ .menu-btn span::after {
+.menu-btn-check:checked ~ .menu-btn span::after {
   top: 0;
   transform: rotate(-45deg);
 }
@@ -71,7 +70,8 @@ header {
 
 .menu-content {
   width: 100vw;
-  height: 180px;
+  /* height: 180px; */
+  height: auto;
   position: absolute;
   left: 0;
   bottom: 110%;
@@ -80,8 +80,8 @@ header {
   transition: all 0.3s;
 }
 
-#menu-btn-check:checked ~ .menu-content {
-  bottom: calc(100% - 17.5rem);
+.menu-btn-check:checked ~ .menu-content {
+  bottom: calc(100% - 15rem);
 }
 
 .menu-content ul {

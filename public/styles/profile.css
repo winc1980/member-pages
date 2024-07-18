@@ -30,7 +30,7 @@ header {
 
 .hamburger-menu p {
   height: 20px;
-  font-size: 12px;
+  font-size: 18px;
   margin: auto auto auto 5px;
 }
 
@@ -87,7 +87,7 @@ header {
 
 .menu-content {
   width: 100vw;
-  height: 180px;
+  height: 250px;
   position: absolute;
   left: 0;
   bottom: 110%;
