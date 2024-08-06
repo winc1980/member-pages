@@ -11,3 +11,24 @@
 .loading p {
   margin-left: 10px;
 }
+
+.profile-texts {
+  text-align: center;
+  width: 300px;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.detail-btn {
+  display: block;
+  background-color: rgb(236, 87, 138);
+  color: white;
+  margin: 0 auto;
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.profile-box {
+  width: 50px;
+}

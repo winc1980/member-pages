@@ -1,11 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { JWT } from "google-auth-library";
+import { hookPropertyMap } from "next/dist/server/require-hook";
 
 type RowData = {
   name: string;
   role: string;
   university: string;
+  faculty: string;
+  isHp: boolean;
+  isApp: boolean;
+  isHpLeader: boolean;
+  isAppLeader: boolean;
 };
 
 export async function GET(req: NextRequest, res: NextResponse) {
@@ -29,6 +35,11 @@ export async function GET(req: NextRequest, res: NextResponse) {
       name: row.get("name") || "",
       role: row.get("role") || "",
       university: row.get("university") || "",
+      faculty: row.get("faculty") || "",
+      isHp: row.get("isHp").toLowerCase() === "true",
+      isApp: row.get("isApp").toLowerCase() === "true",
+      isHpLeader: row.get("isHpLeader").toLowerCase() === "true",
+      isAppLeader: row.get("isAppLeader").toLowerCase() === "true",
     }));
 
     return NextResponse.json(data);

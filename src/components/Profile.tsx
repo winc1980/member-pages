@@ -7,6 +7,11 @@ interface DataItem {
   name: string;
   role: string;
   university: string;
+  faculty: string;
+  isHp: boolean;
+  isApp: boolean;
+  isHpLeader: boolean;
+  isAppLeader: boolean;
 }
 
 export default function Profile() {
@@ -38,17 +43,18 @@ export default function Profile() {
     <div className={styles["profile-container"]}>
       {data.length > 0 &&
         data.map((item: DataItem, index: number) => (
-          <div key={index} className="profile_box">
+          <div key={index} className={styles["profile-box"]}>
             <img src="" alt="" />
-            <div className="profile_texts">
+            <div className={styles["profile-texts"]}>
               <h1>{item.name}</h1>
               <div className="flex-wrapper">
-                <h2>HPチーム</h2>
-                <h1>/</h1>
-                <h2>メンバー</h2>
+                {item.isHp && <h3>HPチーム</h3>}
+                {item.isApp && <h3>APPチーム</h3>}
               </div>
-              <h3>{item.university}</h3>
-              <button className="detail-btn">詳細</button>
+              <h3>
+                {item.university} / {item.faculty}
+              </h3>
+              <button className={styles["detail-btn"]}>詳細</button>
             </div>
           </div>
         ))}

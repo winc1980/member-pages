@@ -1,9 +1,11 @@
 .footerClass {
+  position: fixed;
   display: flex;
   color: white;
   height: 80px;
   width: 100%;
   background-color: rgb(199, 55, 106);
+  bottom: 0;
 }
 
 .footerClass small {
