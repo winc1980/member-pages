@@ -30,7 +30,7 @@
   background-color: rgb(236, 87, 138);
 } */
 
- .menu-btn-check {
+.menu-btn-check {
   display: none;
 } 
 
@@ -219,7 +219,7 @@
     box-sizing: border-box;
     color: #ffffff;
     text-decoration: none;
-    padding: 9px 15px 10px 0;
+    padding: 9px 15px 8px 0;
     position: relative;
   }
   
